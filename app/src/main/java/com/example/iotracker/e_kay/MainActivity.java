@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
@@ -49,8 +50,12 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE_NAME = "com/example/iotracker/e_kay.MASSAGE_NAME";
     public static final String EXTRA_MESSAGE_AGE = "com/example/iotracker/e_kay.MASSAGE_AGE";
 
+//    private static final String BAD = "BAD";
+//    private static final String CHK = "CHECK";
+
     public void signUpFoo(View view){
-        //
+
+//        Log.d(CHK, "you're in signUpFoo");
         EditText editTextName = (EditText) findViewById(R.id.name);
         EditText editTextAge  = (EditText) findViewById(R.id.age);
         if( !TextUtils.isEmpty(editTextName.getText()) && !TextUtils.isEmpty(editTextAge.getText()) ){
@@ -64,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(EXTRA_MESSAGE_AGE, Integer.toString(age));
 
                 startActivity(intent);
+            } else {
+                Toast.makeText(getApplicationContext(),
+                        "Missing Info", Toast.LENGTH_SHORT).show();
+//                Log.d(BAD, "hello");
             }
         }
     }

@@ -2,9 +2,14 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorBackground">#122833</color>
-    <color name="colorButton">#607D8B</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="background">#122833</color>
+    <color name="button">#607D8B</color>
     <color name="colorText">#607D8B</color>
-    <color name="creme">#e1d2d2</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <!--<color name="colorText">#607D8B</color>-->
+    <color name="divider">#BDBDBD</color>
+    <color name="icons">#FFFFFF</color>
 </resources>

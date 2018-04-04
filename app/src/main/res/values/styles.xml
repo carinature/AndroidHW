@@ -6,6 +6,23 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="textSize">24sp</item>--><!--not sure how to do this-->
     </style>
+
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">#ffa000</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorText">#607D8B</item>-->
+        <!--<item name="primaryText">#212121</item>-->
+        <!--<item name="secondaryText">#757575</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+
+
 
 </resources>

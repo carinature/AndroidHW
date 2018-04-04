@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.iotracker.e_kay.MainActivity"
-    android:background="@color/colorBackground" >
+    android:background="@color/background" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textCapWords"
-                android:textColor="@color/creme"
+                android:textColor="@color/secondaryText"
                 android:hint="@string/full_name"/>
 
             <TextView
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="number"
-                android:textColor="@color/creme"
+                android:textColor="@color/secondaryText"
                 android:hint="@string/age"/>
 
             <TextView
@@ -70,21 +70,29 @@
                 android:textColor="@color/colorText"
                 android:layout_marginTop="15dp"/>
 
+            <!--<Spinner-->
+                <!--android:id="@+id/country_spinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textColor="@color/colorText"-->
+                <!--android:background="@color/background"-->
+                <!--/>-->
+
             <Spinner
                 android:id="@+id/country_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="@color/colorText"
-                android:background="@color/colorBackground"/>
+                android:popupBackground="@color/colorText"
+                android:scrollbarStyle="insideInset"
+                android:theme="@style/ThemeSpinner" />
 
             <Button
                 android:id="@+id/sign_up_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@color/colorButton"
+                android:background="@color/button"
                 android:onClick="signUpFoo"
                 android:padding="40dp"
                 android:textSize="16sp"
@@ -94,3 +102,9 @@
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
+
+    <!--android:layout_weight="1"-->
+
+    <!--    for the SPINNER -->
+    <!--style="@style/Widget.AppCompat.Spinner.Underlined"-->
+    <!--android:popupTheme="@style/ThemeSpinner"-->
