@@ -3,7 +3,7 @@ package com.example.iotracker.e_kay;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -16,14 +16,20 @@ public class DisplayMessageActivity extends AppCompatActivity {
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
-//        Intent intent = getIntent();
-        String name = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE_NAME);
+        Intent intent = getIntent();
+        String name = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME);
+        String age = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_AGE);
 
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(name);
+        TextView textViewName = new TextView(this);
+        textViewName.setTextSize(40);
+        textViewName.setText(name);
 
-        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.contenta);
-        relativeLayout.addView(textView);
+        TextView textViewAge = new TextView(this);
+        textViewAge.setTextSize(40);
+        textViewAge.setText(age);
+
+        LinearLayout relativeLayout = (LinearLayout) findViewById (R.id.content);
+        relativeLayout.addView(textViewName);
+        relativeLayout.addView(textViewAge);
     }
 }

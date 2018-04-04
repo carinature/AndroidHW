@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static final String EXTRA_MESSAGE_NAME = "com/example/iotracker/e_kay.MASSAGE";
-//    public static final String EXTRA_MESSAGE_AGE = "com/example/iotracker/e_kay.MASSAGE";
+    public static final String EXTRA_MESSAGE_NAME = "com/example/iotracker/e_kay.MASSAGE_NAME";
+    public static final String EXTRA_MESSAGE_AGE = "com/example/iotracker/e_kay.MASSAGE_AGE";
 
     public void signUpFoo(View view){
         //
@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
             String name = editTextName.getText().toString();
             int age = Integer.parseInt(editTextAge.getText().toString());
             if ( 16 < age && age < 100 && validateLetters(name)){
-                Toast.makeText
-                        (getApplicationContext(),
-                                "User created!",
-                                Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),
+//                                "User created!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, DisplayMessageActivity.class);
                 intent.putExtra(EXTRA_MESSAGE_NAME, name);
+                intent.putExtra(EXTRA_MESSAGE_AGE, Integer.toString(age));
+
                 startActivity(intent);
             }
         }
