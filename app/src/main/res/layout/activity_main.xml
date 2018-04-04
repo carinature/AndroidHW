@@ -13,41 +13,42 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="15dp">
 
             <TextView
-                android:id="@+id/header"
+                android:id="@+id/reg_header"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registration Form"
+                android:layout_height="match_parent"
+                android:text="@string/registration_form"
                 android:textSize="24sp"
                 android:textColor="@color/colorText"
-                android:layout_marginVertical="15dp"/>
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
 
             <TextView
-                android:id="@+id/name_lable"
+                android:id="@+id/name_label"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/full_name"
                 android:textSize="16sp"
                 android:textColor="@color/colorText"
-                android:layout_marginTop
-                    ="15dp"/>
+                android:layout_marginTop="15dp"/>
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textCapWords"
-                android:textColor="@color/creme" />
+                android:textColor="@color/creme"
+                android:hint="@string/full_name"/>
 
             <TextView
-                android:id="@+id/age_lable"
+                android:id="@+id/age_label"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/age"
                 android:textSize="16sp"
                 android:layout_marginTop="15dp"
@@ -56,36 +57,38 @@
             <EditText
                 android:id="@+id/age"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:inputType="number"
-                android:textColor="@color/creme"/>
+                android:textColor="@color/creme"
+                android:hint="@string/age"/>
 
             <TextView
-                android:id="@+id/country_lable"
+                android:id="@+id/country_label"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Country"
+                android:layout_height="match_parent"
+                android:text="@string/country"
                 android:textColor="@color/colorText"
                 android:layout_marginTop="15dp"/>
 
             <Spinner
                 android:id="@+id/country_spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textColor="@color/colorText"
                 android:background="@color/colorBackground"/>
 
             <Button
-                android:id="@+id/signup_button"
+                android:id="@+id/sign_up_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
+                android:layout_margin="20dp"
                 android:background="@color/colorButton"
                 android:onClick="signUpFoo"
                 android:padding="40dp"
-                android:textSize="16dp"
-                android:text="Sign Up"
+                android:textSize="16sp"
+                android:text="@string/sign_up"
                 android:textAllCaps="false" />
 
         </LinearLayout>

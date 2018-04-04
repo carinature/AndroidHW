@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -45,15 +46,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public static final String EXTRA_MESSAGE_NAME = "com/example/iotracker/e_kay.MASSAGE";
+//    public static final String EXTRA_MESSAGE_AGE = "com/example/iotracker/e_kay.MASSAGE";
+
     public void signUpFoo(View view){
         //
-        EditText nameEdit = (EditText)findViewById(R.id.name);
-        EditText ageEdit  = (EditText)findViewById(R.id.age);
-        if( !TextUtils.isEmpty(nameEdit.getText()) && !TextUtils.isEmpty(ageEdit.getText()) ){
-            String name = nameEdit.getText().toString();
-            int age = Integer.parseInt(ageEdit.getText().toString());
-            if ( 16<age && 100>age && validateLetters(name)){
-                Toast.makeText(getApplicationContext(), "User created!",  Toast.LENGTH_SHORT).show();
+        EditText editTextName = (EditText) findViewById(R.id.name);
+        EditText editTextAge  = (EditText) findViewById(R.id.age);
+        if( !TextUtils.isEmpty(editTextName.getText()) && !TextUtils.isEmpty(editTextAge.getText()) ){
+            String name = editTextName.getText().toString();
+            int age = Integer.parseInt(editTextAge.getText().toString());
+            if ( 16 < age && age < 100 && validateLetters(name)){
+                Toast.makeText
+                        (getApplicationContext(),
+                                "User created!",
+                                Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, DisplayMessageActivity.class);
+                intent.putExtra(EXTRA_MESSAGE_NAME, name);
+                startActivity(intent);
             }
         }
     }
