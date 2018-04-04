@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">E-Kay</string>
+    <string name="registration_form">טופס הרשמה</string>
+    <string name="full_name">שם מלא:</string>
+    <string name="age">גיל:</string>
+    <string name="sign_up">רישום</string>
+    <string name="country">מדינה</string>
+    <string name="blabla">בלה-בלה</string>
+    <string-array name="country_array">
+        <item>ישראל</item>
+        <item>תאילנד</item>
+        <item>קנדה</item>
+        <item>רוסיה</item>
+        <item>מצריים</item>
+    </string-array>
+</resources>

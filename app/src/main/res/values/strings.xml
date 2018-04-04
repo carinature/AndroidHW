@@ -5,7 +5,7 @@
     <string name="age">Age:</string>
     <string name="sign_up">Sign Up</string>
     <string name="country">Country</string>
-    <string name="blabla">blabla</string>
+    <string name="blabla">Blabla</string>
     <string-array name="country_array">
         <item>Israel</item>
         <item>Thailand</item>

@@ -18,18 +18,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME);
-        String age = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_AGE);
+//        String age = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_AGE);
 
         TextView textViewName = new TextView(this);
         textViewName.setTextSize(40);
-        textViewName.setText(name);
+        textViewName.setText("Welcome " + name + "!");
 
-        TextView textViewAge = new TextView(this);
-        textViewAge.setTextSize(40);
-        textViewAge.setText(age);
+//        TextView textViewAge = new TextView(this);
+//        textViewAge.setTextSize(40);
+//        textViewAge.setText(age);
 
         LinearLayout relativeLayout = (LinearLayout) findViewById (R.id.content);
         relativeLayout.addView(textViewName);
-        relativeLayout.addView(textViewAge);
+//        relativeLayout.addView(textViewAge);
     }
 }

@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(EXTRA_MESSAGE_AGE, Integer.toString(age));
 
                 startActivity(intent);
-            } else {
-                Toast.makeText(getApplicationContext(),
-                        "Missing Info", Toast.LENGTH_SHORT).show();
-//                Log.d(BAD, "hello");
+//            } else {
+//                Toast.makeText(getApplicationContext(),
+//                        "Missing Info", Toast.LENGTH_SHORT).show();
+////                Log.d(BAD, "hello");
             }
         }
     }
