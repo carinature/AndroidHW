@@ -3,9 +3,7 @@ package com.example.iotracker.e_kay;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
@@ -17,7 +15,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-        String welcome_name = "Welcome " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME) + "!";
+        String welcome_name = "Welcome " +
+                intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME) + "!";
 //        String age = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_AGE);
 
         TextView textViewName = (TextView) findViewById(R.id.welcome_text);

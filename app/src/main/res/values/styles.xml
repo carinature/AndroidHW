@@ -20,6 +20,7 @@
         <!--<item name="primaryText">#212121</item>-->
         <!--<item name="secondaryText">#757575</item>-->
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/primaryText</item>
     </style>
 
 

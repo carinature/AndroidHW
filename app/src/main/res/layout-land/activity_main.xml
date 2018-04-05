@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.iotracker.e_kay.MainActivity"
-    android:background="@color/background" >
+    android:background="@color/colorPrimaryDark" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
 
         <LinearLayout
@@ -26,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/registration_form"
                 android:textSize="24sp"
-                android:textColor="@color/colorText"
+                android:textColor="@color/primaryText"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"/>
 
@@ -36,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/full_name"
                 android:textSize="16sp"
-                android:textColor="@color/colorText"
+                android:textColor="@color/primaryText"
                 android:layout_marginTop="15dp"/>
 
             <EditText
@@ -54,7 +55,7 @@
                 android:text="@string/age"
                 android:textSize="16sp"
                 android:layout_marginTop="15dp"
-                android:textColor="@color/colorText"/>
+                android:textColor="@color/primaryText"/>
 
             <EditText
                 android:id="@+id/age"
@@ -81,16 +82,17 @@
                 android:layout_height="match_parent"
                 android:text="@string/country"
                 android:textSize="16sp"
-                android:textColor="@color/colorText"/>
+                android:textColor="@color/primaryText"/>
 
             <Spinner
                 android:id="@+id/country_spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="@color/colorText"
+                android:layout_height="match_parent"
+                android:popupBackground="@color/colorSecondaryDark"
                 android:scrollbarStyle="insideInset"
-                android:theme="@style/ThemeSpinner"
-                android:textColor="@color/colorText" />
+                android:theme="@style/ThemeSpinner"/>
+            <!--android:popupTheme="@style/ThemeSpinner"-->
+            <!--android:textColor="@color/primaryText"-->
 
             <Button
                 android:id="@+id/sign_up_button"
@@ -98,10 +100,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@color/button"
+                android:background="@color/colorSecondaryDark"
+                android:textColor="@color/primaryText"
                 android:onClick="signUpFoo"
-                android:padding="20dp"
-                android:textSize="24sp"
+                android:padding="40dp"
+                android:textSize="16sp"
                 android:text="@string/sign_up"
                 android:textAllCaps="false" />
 
