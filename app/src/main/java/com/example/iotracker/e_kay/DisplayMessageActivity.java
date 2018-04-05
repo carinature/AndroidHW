@@ -17,19 +17,23 @@ public class DisplayMessageActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME);
+        String welcome_name = "Welcome " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE_NAME) + "!";
 //        String age = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_AGE);
 
-        TextView textViewName = new TextView(this);
+        TextView textViewName = (TextView) findViewById(R.id.welcome_text);
         textViewName.setTextSize(40);
-        textViewName.setText("Welcome " + name + "!");
+        textViewName.setText(welcome_name);
+
+//        TextView textViewName = new TextView(this);
+//        textViewName.setTextSize(40);
+//        textViewName.setText("Welcome " + name + "!");
 
 //        TextView textViewAge = new TextView(this);
 //        textViewAge.setTextSize(40);
 //        textViewAge.setText(age);
 
-        LinearLayout relativeLayout = (LinearLayout) findViewById (R.id.content);
-        relativeLayout.addView(textViewName);
-//        relativeLayout.addView(textViewAge);
+//        LinearLayout relativeLayout = (LinearLayout) findViewById (R.id.content);
+//        relativeLayout.addView(textViewName);
+////        relativeLayout.addView(textViewAge);
     }
 }
