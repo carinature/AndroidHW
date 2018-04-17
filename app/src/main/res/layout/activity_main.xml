@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.iotracker.e_kay.MainActivity"
     android:background="@color/colorPrimaryDark" >
-<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -71,12 +71,12 @@
                 android:layout_marginTop="15dp"/>
 
             <!--<Spinner-->
-                <!--android:id="@+id/country_spinner"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:textColor="@color/colorText"-->
-                <!--android:background="@color/background"-->
-                <!--/>-->
+            <!--android:id="@+id/country_spinner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/colorText"-->
+            <!--android:background="@color/background"-->
+            <!--/>-->
 
             <Spinner
                 android:id="@+id/country_spinner"
@@ -96,7 +96,7 @@
                 android:layout_margin="20dp"
                 android:background="@color/colorSecondaryDark"
                 android:textColor="@color/primaryText"
-                android:onClick="signUpFoo"
+                android:onClick="signUpButtonClicked"
                 android:padding="40dp"
                 android:textSize="16sp"
                 android:text="@string/sign_up"

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.constraint.ConstraintLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android" --><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/order_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/make_order_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/make_order"
+        android:textColor="@color/secondaryText"
+        android:textStyle="italic"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/order_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        >
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        android:onClick="orderButtonClicked"
+        />
+
+
+    <!--<RecyclerView-->
+        <!--android:id="@+id/my_recycler_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="vertical"-->
+        <!--&gt;-->
+
+    <!--</RecyclerView>-->
+
+</LinearLayout>
+
+    <!--<CheckedTextView-->
+    <!--android:id="@+id/checkedTextView1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="24dp"-->
+    <!--android:checkMark="?android:attr/listChoiceIndicatorSingle"-->
+    <!--android:checkMarkTint="@color/colorSecondary"-->
+    <!--android:text="CheckedTextView"-->
+    <!--android:textColor="@color/primaryText"-->
+    <!--android:checked="false"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="auto"-->
+    <!--/>-->
